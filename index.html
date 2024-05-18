@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Yum-Yum</title>
-    <link rel="stylesheet" href="fonts/Intro/index.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="fonts/Intro/index.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
   </head>
   <body>
     <header>
@@ -15,25 +16,27 @@
         </div>
 
         <!-- Menu icons -->
-        <div>
+        <div class="menu-mob">
           <a href="javascript:void 0;"><img src="./images/hamburger.svg" alt="Menu icon"></a>
           <a href="javascript:void 0;"><img src="./images/cart.svg" alt="Cart icon"></a>
         </div>
       </nav>
 
-      <div>
+      <div class="gray-image"></div>
+
+      <div class="order">
         <h2>Order from restaurants around you</h2>
         <form action="javascript:void 0;">
-          <label>
+          <label class="input-container">
             <img src="./images/pin.svg" alt="Pin icon">
             Enter your address
-            <input type="text" name="address" />
+            <input type="text" name="address"/>
           </label>
 
-          <label>
+          <label class="input-container">
             <img src="./images/bbq.svg" alt="BBQ icon">
-            What would you like
-            <input type="text" name="foodtype" />
+            What would you like?
+            <input type="text" name="foodtype"/>
           </label>
 
           <p>
@@ -43,20 +46,34 @@
       </div>
     </header>
 
-    <section id="section-how-it-works">
-      <h2>How it works</h2>
+    <section id="section-how-it-works" class="three-list">
+      <h2>How it works?</h2>
       <ul>
-        <img src="./images/map.png">
-        <li>1. Search</li>
-        <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <li class="three-list-item">
+          <img src="./images/map.png">
+          <div>
+            <h3>1. Search</h3>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+          </div>
+        </li>
 
-        <img src="./images/clipboard.png">
-        <li>2. Order</li>
-        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+        
+        <li class="three-list-item">
+          <img src="./images/clipboard.png">
+          <div>
+            <h3>2. Order</h3>
+            <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+          </div>
+        </li>
 
-        <img src="./images/bag.png">
-        <li>3. Eat</li>
-        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+        
+        <li class="three-list-item">
+          <img src="./images/bag.png">
+          <div>
+            <h3>3. Eat</h3>
+            <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
