@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Yum-Yum</title>
     <link rel="stylesheet" href="fonts/Intro/index.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
   </head>
   <body>
@@ -20,66 +21,80 @@
           <a href="javascript:void 0;"><img src="./images/hamburger.svg" alt="Menu icon"></a>
           <a href="javascript:void 0;"><img src="./images/cart.svg" alt="Cart icon"></a>
         </div>
+
+        <!-- Nav bar -->
+        <div class="nav-bar">
+          <a href="javascript:void(0);">Home</a>
+          <a href="javascript:void(0);">Restaurants</a>
+          <a href="javascript:void(0);">Offers</a>
+          <a href="javascript:void(0);">Dishes</a>
+          <a href="javascript:void(0);">Cuisine</a>
+          <a href="javascript:void(0);">About us</a>
+          <a href="javascript:void(0);">Contact</a>
+        </div>
       </nav>
 
-      <div class="gray-image"></div>
+      <div class="first-section">
+        <div class="gray-image"></div>
+        <div class="order">
+          <h2>Order from restaurants around you</h2>
+          <form action="javascript:void 0;">
+            <label class="input-container">
+              <img src="./images/pin.svg" alt="Pin icon">
+              Enter your address
+              <input type="text" name="address"/>
+            </label>
 
-      <div class="order">
-        <h2>Order from restaurants around you</h2>
-        <form action="javascript:void 0;">
-          <label class="input-container">
-            <img src="./images/pin.svg" alt="Pin icon">
-            Enter your address
-            <input type="text" name="address"/>
-          </label>
+            <label class="input-container">
+              <img src="./images/bbq.svg" alt="BBQ icon">
+              What would you like?
+              <input type="text" name="foodtype"/>
+            </label>
 
-          <label class="input-container">
-            <img src="./images/bbq.svg" alt="BBQ icon">
-            What would you like?
-            <input type="text" name="foodtype"/>
-          </label>
-
-          <p>
-            <button type="submit">Find a food</button>
-          </p>
-        </form>
+            <p>
+              <button type="submit">Find a food</button>
+            </p>
+          </form>
+        </div>
       </div>
     </header>
 
     <section id="section-how-it-works" class="three-list">
       <h2>How it works?</h2>
       <ul>
-        <li class="three-list-item">
-          <img src="./images/map.png">
-          <div>
-            <h3>1. Search</h3>
-            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
-          </div>
-        </li>
+        <div class="three-list-container">
+          <li class="three-list-item">
+            <img src="./images/map.png">
+            <div>
+              <h3>1. Search</h3>
+              <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+            </div>
+          </li>
 
-        
-        <li class="three-list-item">
-          <img src="./images/clipboard.png">
-          <div>
-            <h3>2. Order</h3>
-            <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
-          </div>
-        </li>
+          
+          <li class="three-list-item">
+            <img src="./images/clipboard.png">
+            <div>
+              <h3>2. Order</h3>
+              <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+            </div>
+          </li>
 
-        
-        <li class="three-list-item">
-          <img src="./images/bag.png">
-          <div>
-            <h3>3. Eat</h3>
-            <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
-          </div>
-        </li>
+          
+          <li class="three-list-item">
+            <img src="./images/bag.png">
+            <div>
+              <h3>3. Eat</h3>
+              <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+            </div>
+          </li>
+        </div>
       </ul>
     </section>
 
-    <section id="section-dishes" class="cards-section">
+    <section id="section-dishes">
       <h2 style="margin-bottom: -0.5em;">Dishes</h2>
-
+    <div class="cards-section">
       <!-- Dish 1 -->
       <div class="rating-card">
         <div></div>
@@ -152,6 +167,7 @@
          <p>33 Ratings</p>
         </div>
       </div>
+    </div>
     </section>
 
     <aside class="four-icons">
@@ -193,32 +209,35 @@
       
     </aside>
 
-    <section id="section-restaurants" class="cards-section">
+    <section id="section-restaurants">
       <h2>Restaurant by Cuisine</h2>
-      <!-- Restaurant Type 1 -->
-      <div class="rating-card">
-        <div></div>
-        <div>
-          <h3>A La Carte</h3>
-          <p>189 dishes</p>
-        </div>
-      </div>
 
-      <!-- Restaurant Type 2 -->
-      <div class="rating-card">
-        <div></div>
-        <div>
-          <h3>Fast Food</h3>
-          <p>3,750 dishes</p>
+      <div class="cards-section">
+        <!-- Restaurant Type 1 -->
+        <div class="rating-card">
+          <div></div>
+          <div>
+            <h3>A La Carte</h3>
+            <p>189 dishes</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Restaurant Type 3 -->
-      <div class="rating-card">
-        <div></div>
-        <div>
-          <h3>Italian</h3>
-          <p>708 dishes</p>
+        <!-- Restaurant Type 2 -->
+        <div class="rating-card">
+          <div></div>
+          <div>
+            <h3>Fast Food</h3>
+            <p>3,750 dishes</p>
+          </div>
+        </div>
+
+        <!-- Restaurant Type 3 -->
+        <div class="rating-card">
+          <div></div>
+          <div>
+            <h3>Italian</h3>
+            <p>708 dishes</p>
+          </div>
         </div>
       </div>
 
@@ -228,57 +247,61 @@
       <div class="banner">banner from hezy theme</div>
     </div>
 
-    <section id="section-featured-restaurant" class="cards-section">
+    <section id="section-featured-restaurant">
       <h2>Featured Restaurant</h2>
 
-      <!-- Featured restaurant 1 -->
-      <div class="rating-card">
+      <div class="cards-section">
+
+        <!-- Featured restaurant 1 -->
+        <div class="rating-card">
+          <div></div>
+          <div>
+            <h3>Acquerello</h3>
+            <p>Italian</p>
+          </div>
+          <div>
+            <button>View menu</button>
+            <button>Buy Now</button>
+          </div>
+
+          <div>
+          <ul>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+          </ul>
+          <p>31 Reviews</p>
+          </div>
+        </div>
+
+        
+
+        <!-- Featured restaurant 2 -->
+        <div class="rating-card">
         <div></div>
         <div>
-          <h3>Acquerello</h3>
-          <p>Italian</p>
+          <h3>Addision at The Grand Del Mar</h3>
+          <p>Contemporary French</p>
         </div>
-        <div>
-          <button>View menu</button>
-          <button>Buy Now</button>
-        </div>
+          <div>
+            <button>View menu</button>
+            <button>Buy Now</button>
+          </div>
 
-        <div>
-         <ul>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-         </ul>
-         <p>31 Reviews</p>
+          <div>
+          <ul>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+            <li><img src="./images/star.svg" alt="star"></li>
+          </ul>
+          <p>419 Reviews</p>
+          </div>
         </div>
       </div>
-
-      <!-- Featured restaurant 2 -->
-      <div class="rating-card">
-      <div></div>
-      <div>
-        <h3>Addision at The Grand Del Mar</h3>
-        <p>Contemporary French</p>
-      </div>
-        <div>
-          <button>View menu</button>
-          <button>Buy Now</button>
-        </div>
-
-        <div>
-         <ul>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-          <li><img src="./images/star.svg" alt="star"></li>
-         </ul>
-         <p>419 Reviews</p>
-        </div>
-      </div>
-
     </section>
 
     <footer>

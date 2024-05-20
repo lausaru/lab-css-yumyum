@@ -52,6 +52,10 @@ nav {
     margin-right: 2%;
 }
 
+.nav-bar {
+    display: none;
+}
+
 .menu-mob img {
     width: 5em;
     height: 5em;
@@ -149,7 +153,7 @@ nav {
     padding: 10% 0;
 }
 
-.three-list h2, .cards-section h2 {
+.three-list h2, #section-dishes h2, #section-restaurants h2, #section-featured-restaurant h2 {
     font-family: 'Intro';
     font-size: 6em;
     text-transform: uppercase;
@@ -185,8 +189,11 @@ nav {
     padding: 2em;
 }
 
-.cards-section {
+#section-dishes, #section-restaurants, #section-featured-restaurant {
     background-color: var(--beige-background);
+}
+
+.cards-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,4 +422,118 @@ address ul {
     font-size: 2.5em;
     font-family: 'Lato', sans-serif;
     color: black;
+}
+
+@media (min-width:801px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin-top: 3em;
+        gap: 2em;
+    }
+    
+
+    .nav-bar a {
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .menu-mob {
+        display: none;
+    }
+
+    .first-section {
+        display: flex;
+        flex-direction: row;
+        height: 1000px;
+    }
+
+    .gray-image {
+        height: 1000px;
+    }
+
+    .three-list-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .three-list-item img {
+        height: 50%;
+        width: 40%;
+    }
+
+    .three-list-item h3 {
+        font-size: 3em;
+    }
+
+    .three-list-item p {
+        font-size: 1.5em;
+    }
+
+    .cards-section {
+        flex-direction: row;
+    }
+    
+    .rating-card {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .rating-card div:first-child {
+        background-color: var(--gray);
+        width: 600px;
+        height: 300px;
+    }
+    
+    .rating-card div:nth-child(2) {
+        background-color: var(--white);
+        height: 200px;
+    }
+    
+    .rating-card div:nth-child(2) h3 {
+        font-size: 2em;
+    }
+    
+    .rating-card div:nth-child(2) p {
+        font-size: 1.5em;
+    }
+
+    .rating-card div:nth-child(3) {
+        height: 80px;
+    }
+    
+    .rating-card div:nth-child(3) p {
+        font-size: 2em;
+    }
+    
+    .rating-card div:nth-child(3) button {
+        font-size: 1em;
+        height: 70px;
+    }
+    
+    .rating-card div:nth-child(4) img {
+        width: 30px;
+    }
+    
+    .rating-card div:nth-child(4) p {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+
+    .four-icons-each {
+        gap: 1em;
+    }
+
+    
 }
